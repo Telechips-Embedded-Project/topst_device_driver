@@ -1,0 +1,1 @@
+cmd_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.mod := { echo  /home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o;  echo; } > /home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.mod
