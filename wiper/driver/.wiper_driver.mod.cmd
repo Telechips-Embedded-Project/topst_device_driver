@@ -1,1 +1,1 @@
-cmd_/home/jsy/yocto-sdk-populate/work/wiper/wiper_driver.mod := { echo  /home/jsy/yocto-sdk-populate/work/wiper/wiper_driver.o;  echo; } > /home/jsy/yocto-sdk-populate/work/wiper/wiper_driver.mod
+cmd_/home/jsy/yocto-sdk-populate/topst_device_driver/wiper/driver/wiper_driver.mod := { echo  /home/jsy/yocto-sdk-populate/topst_device_driver/wiper/driver/wiper_driver.o;  echo; } > /home/jsy/yocto-sdk-populate/topst_device_driver/wiper/driver/wiper_driver.mod

@@ -18,22 +18,7 @@
 #define WIPER_MODE_FAST 1
 #define WIPER_MODE_SLOW 2
 
-#define PWM_PERIOD_NS     20000000  // 20ms
-#define PWM_DUTY_FAST_NS  1500000   // 1.5ms
-#define PWM_DUTY_SLOW_NS  800000    // 0.8ms
-
-static struct pwm_device *wiper_pwm;
 static int wiper_mode = WIPER_MODE_OFF;
-
-static void apply_pwm_state(struct pwm_device *pwm, u32 duty_ns, u32 period_ns, bool enable)
-{
-    struct pwm_state state;
-    pwm_get_state(pwm, &state);
-    state.period = period_ns;
-    state.duty_cycle = duty_ns;
-    state.enabled = enable;
-    pwm_apply_state(pwm, &state);
-}
 
 static long wiper_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 {
@@ -45,19 +30,6 @@ static long wiper_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
                 return -EFAULT;
             if (user_val < WIPER_MODE_OFF || user_val > WIPER_MODE_SLOW)
                 return -EINVAL;
-
-            switch (user_val) {
-                case WIPER_MODE_FAST:
-                    apply_pwm_state(wiper_pwm, PWM_DUTY_FAST_NS, PWM_PERIOD_NS, true);
-                    break;
-                case WIPER_MODE_SLOW:
-                    apply_pwm_state(wiper_pwm, PWM_DUTY_SLOW_NS, PWM_PERIOD_NS, true);
-                    break;
-                case WIPER_MODE_OFF:
-                default:
-                    apply_pwm_state(wiper_pwm, 0, PWM_PERIOD_NS, false);
-                    break;
-            }
             wiper_mode = user_val;
             break;
 
@@ -69,6 +41,7 @@ static long wiper_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
         default:
             return -EINVAL;
     }
+
     return 0;
 }
 
@@ -86,22 +59,12 @@ static struct miscdevice wiper_miscdev = {
 
 static int wiper_probe(struct platform_device *pdev)
 {
-    struct device *dev = &pdev->dev;
-
-    wiper_pwm = devm_pwm_get(dev, "wiper_pwm");
-    if (IS_ERR(wiper_pwm)) {
-        dev_err(dev, "failed to get pwm device\n");
-        return PTR_ERR(wiper_pwm);
-    }
-
-    dev_info(dev, "wiper driver probed successfully\n");
+    dev_info(&pdev->dev, "wiper driver probed successfully\n");
     return misc_register(&wiper_miscdev);
 }
 
 static int wiper_remove(struct platform_device *pdev)
 {
-    if (wiper_pwm)
-        pwm_disable(wiper_pwm);
     misc_deregister(&wiper_miscdev);
     return 0;
 }
@@ -125,4 +88,4 @@ module_platform_driver(wiper_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Telechips Embedded Project");
-MODULE_DESCRIPTION("TOPST D3-G Wiper Control Driver with PWM (HW)");
+MODULE_DESCRIPTION("TOPST D3-G Wiper Control Driver with Mode Storage via ioctl");

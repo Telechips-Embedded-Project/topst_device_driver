@@ -1,2 +1,2 @@
-/home/jsy/yocto-sdk-populate/work/wiper/wiper_driver.o
+/home/jsy/yocto-sdk-populate/topst_device_driver/wiper/driver/wiper_driver.o
 
