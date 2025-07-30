@@ -24,5 +24,3 @@ MODULE_INFO(retpoline, "Y");
 
 MODULE_INFO(depends, "");
 
-MODULE_ALIAS("of:N*T*Ctelechips,aircon-pwm");
-MODULE_ALIAS("of:N*T*Ctelechips,aircon-pwmC*");

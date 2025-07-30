@@ -1,8 +1,8 @@
-cmd_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o := aarch64-telechips-linux-gcc -Wp,-MD,/home/jsy/yocto-sdk-populate/work/aircon/driver/.aircon_driver.o.d -nostdinc -isystem /home/jsy/yocto-sdk-populate/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-telechips-linux/gcc/aarch64-telechips-linux/9.2.1/include -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/arch/arm64/include -I./arch/arm64/include/generated -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include -I./include -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/uapi -I./include/generated/uapi -include /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/kconfig.h -include /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DKASAN_SHADOW_SCALE_SHIFT=3 -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -Werror -mgeneral-regs-only -DCONFIG_AS_LSE=1 -DCONFIG_CC_HAS_K_CONSTRAINT=1 -fno-asynchronous-unwind-tables -Wno-psabi -mabi=lp64 -mbranch-protection=none -DKASAN_SHADOW_SCALE_SHIFT=3 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -Os --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/= -Wno-packed-not-aligned --sysroot=/home/jsy/yocto-sdk-populate/sysroots/aarch64-telechips-linux -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1456  -DMODULE  -DKBUILD_BASENAME='"aircon_driver"' -DKBUILD_MODNAME='"aircon_driver"' -c -o /home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o /home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.c
+cmd_/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o := aarch64-telechips-linux-gcc -Wp,-MD,/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/.aircon_driver.o.d -nostdinc -isystem /home/jsy/yocto-sdk-populate/sysroots/x86_64-oesdk-linux/usr/lib/aarch64-telechips-linux/gcc/aarch64-telechips-linux/9.2.1/include -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/arch/arm64/include -I./arch/arm64/include/generated -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include -I./include -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/uapi -I./include/generated/uapi -include /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/kconfig.h -include /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DKASAN_SHADOW_SCALE_SHIFT=3 -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -Werror -mgeneral-regs-only -DCONFIG_AS_LSE=1 -DCONFIG_CC_HAS_K_CONSTRAINT=1 -fno-asynchronous-unwind-tables -Wno-psabi -mabi=lp64 -mbranch-protection=none -DKASAN_SHADOW_SCALE_SHIFT=3 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -Os --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=/home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/= -Wno-packed-not-aligned --sysroot=/home/jsy/yocto-sdk-populate/sysroots/aarch64-telechips-linux -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1456  -DMODULE  -DKBUILD_BASENAME='"aircon_driver"' -DKBUILD_MODNAME='"aircon_driver"' -c -o /home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o /home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.c
 
-source_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o := /home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.c
+source_/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o := /home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.c
 
-deps_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o := \
+deps_/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o := \
   /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/kconfig.h \
     $(wildcard include/config/cc/version/text.h) \
     $(wildcard include/config/cpu/big/endian.h) \
@@ -820,35 +820,7 @@ deps_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o := \
   /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/arch/arm64/include/asm/device.h \
     $(wildcard include/config/iommu/api.h) \
   /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/pm_wakeup.h \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/of.h \
-    $(wildcard include/config/of/dynamic.h) \
-    $(wildcard include/config/sparc.h) \
-    $(wildcard include/config/of/promtree.h) \
-    $(wildcard include/config/of/kobj.h) \
-    $(wildcard include/config/of/numa.h) \
-    $(wildcard include/config/of/overlay.h) \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/mod_devicetable.h \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/property.h \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/fwnode.h \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/of_device.h \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/cpu.h \
-    $(wildcard include/config/pm/sleep/smp.h) \
-    $(wildcard include/config/pm/sleep/smp/nonzero/cpu.h) \
-    $(wildcard include/config/hotplug/smt.h) \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/node.h \
-    $(wildcard include/config/hmem/reporting.h) \
-    $(wildcard include/config/memory/hotplug/sparse.h) \
-    $(wildcard include/config/hugetlbfs.h) \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/cpuhotplug.h \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/platform_device.h \
-    $(wildcard include/config/suspend.h) \
-    $(wildcard include/config/hibernate/callbacks.h) \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/of_platform.h \
-    $(wildcard include/config/of/address.h) \
-  /home/jsy/topst/build-main/tmp/work-shared/tcc8050-main/kernel-source/include/linux/pwm.h \
-    $(wildcard include/config/pwm.h) \
-    $(wildcard include/config/pwm/sysfs.h) \
 
-/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o: $(deps_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o)
+/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o: $(deps_/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o)
 
-$(deps_/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o):
+$(deps_/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o):

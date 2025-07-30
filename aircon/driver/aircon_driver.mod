@@ -1,2 +1,2 @@
-/home/jsy/yocto-sdk-populate/work/aircon/driver/aircon_driver.o
+/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o
 
