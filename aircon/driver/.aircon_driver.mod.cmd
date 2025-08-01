@@ -1,1 +1,0 @@
-cmd_/home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.mod := { echo  /home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.o;  echo; } > /home/jsy/yocto-sdk-populate/topst_device_driver/aircon/driver/aircon_driver.mod
