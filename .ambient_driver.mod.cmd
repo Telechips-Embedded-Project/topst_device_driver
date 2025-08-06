@@ -1,0 +1,1 @@
+cmd_/home/jsy/yocto-sdk-populate2/ledstrip_topst/0806/ambient_driver.mod := { echo  /home/jsy/yocto-sdk-populate2/ledstrip_topst/0806/ambient_driver.o;  echo; } > /home/jsy/yocto-sdk-populate2/ledstrip_topst/0806/ambient_driver.mod
