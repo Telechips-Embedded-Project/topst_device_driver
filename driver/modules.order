@@ -1,5 +1,1 @@
-/home/jsy/yocto-sdk-populate/topst_device_driver/driver/aircon_driver.ko
-/home/jsy/yocto-sdk-populate/topst_device_driver/driver/ambient_driver.ko
-/home/jsy/yocto-sdk-populate/topst_device_driver/driver/headlamp_driver.ko
-/home/jsy/yocto-sdk-populate/topst_device_driver/driver/window_driver.ko
-/home/jsy/yocto-sdk-populate/topst_device_driver/driver/wiper_driver.ko
+/home/jsy/yocto-sdk-populate2/ledstrip_topst/0806/ambient_driver.ko

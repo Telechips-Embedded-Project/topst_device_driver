@@ -1,5 +1,5 @@
-obj-m += aircon_driver.o ambient_driver.o headlamp_driver.o window_driver.o wiper_driver.o
-KDIR := /home/jsy/topst/build-main/tmp/work/tcc8050_main-telechips-linux/linux-telechips/5.4.159-r0/build
+obj-m += ambient_driver.o 
+KDIR := /home/jsy/topst2/build-main/tmp/work/tcc8050_main-telechips-linux/linux-telechips/5.4.159-r0/build
 CROSS_COMPILE := aarch64-telechips-linux-
 ARCH ?= arm64
 
