@@ -20,7 +20,9 @@ driver 폴더에서 sudo insmod window_driver.ko 한 뒤, <br />
 테스트: user 폴더에서 ./window_setter [open/close/stop] <br /><br />
 
 **5. 엠비언트** <br />
-SPI0 MOSI를 노란색 선에 꽂기 <br />
-아직 테스트 진행 중 .. SPI로 구현 중 <br />
+SPI1 MOSI를 노란색 선에 꽂기 <br />
+driver 폴더에서 insmod ambient_driver.ko 한 뒤, <br />
+user 폴더에서 ./ambient_daemon & 수행 <br />
+테스트: user 폴더에서 ./ambient_setter color [red, yellow, green, blue, rainbow] , ./ambient_setter brightness [0~100] <br /> <br />
 
 <img width="833" height="691" alt="image" src="https://github.com/user-attachments/assets/4178cfea-bc6f-4fa1-b68e-00be327ff388" />
