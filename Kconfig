@@ -1,0 +1,42 @@
+# drivers/mytopst/Kconfig
+menuconfig MYTOPST
+    bool "My TOPST drivers"
+    depends on OF
+    help
+      Telechips 기반 TOPST 프로젝트용 드라이버 모음.
+
+if MYTOPST
+
+config MYTOPST_AMBIENT
+    tristate "Ambient state driver"
+    depends on OF
+    help
+      IOCTL로 모드/밝기 상태를 보관합니다(AMBIENT_MAGIC='L'). 실제 WS281x 신호는 유저 데몬이 spidev로 송신합니다.
+
+config MYTOPST_WIPER
+    tristate "Wiper state driver (ioctl, DT)"
+    depends on OF
+    help
+      IOCTL로 모드 상태만 저장합니다(WIPER_MAGIC='W').
+      지속 PWM 제어는 유저 데몬에서 수행.
+
+config MYTOPST_WINDOW
+    tristate "Window H-bridge driver (ioctl, DT)"
+    depends on OF && GPIOLIB
+    help
+      IOCTL로 0/1/2 상태를 제어합니다. in1/in2 GPIO, limit 스위치를 DT로 받아 동작합니다.
+
+config MYTOPST_AIRCON
+    tristate "Aircon state driver (ioctl, DT)"
+    depends on OF
+    help
+      IOCTL로 팬 레벨 상태만 저장합니다(AIRCON_MAGIC='A').
+      실제 PWM 제어는 유저 데몬에서 수행합니다.
+
+config MYTOPST_HEADLAMP
+    tristate "Headlamp driver (ioctl, DT)"
+    depends on OF && GPIOLIB
+    help
+      IOCTL로 ON/OFF 제어합니다.
+      GPIO는 DT의 headlamp-gpios에서 가져옵니다.
+endif
